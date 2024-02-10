@@ -1,0 +1,9 @@
+
+/* Optional: CSS for styling */
+#content {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}

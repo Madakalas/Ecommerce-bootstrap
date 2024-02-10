@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Content on Button Click</title>
+<style>
+    /* Optional: CSS for styling */
+    #content {
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+</style>
+</head>
+<body>
+
+<button id="showButton">Show Content</button>
+<div id="content">
+    <!-- Your content goes here -->
+    Specifications
+                            MacBook Pro, 140W USB-C Power Adapter, USB-C to MagSafe 3 Cable (2 m)
+                            Model Number   MRW13HN/A
+                            Part Number    MRW13HN/A
+                            Model Name     MacBook Pro
+                            Series         2023 MacBook Pro
+                            Color          Space Black
+                            Type            Laptop
+                            Suitable For    Processing & MultitaskingBattery Backup
+                            Upto 22 Hours
+                            MS Office Provided   No
+
+                            Processor And Memory Features
+                            Processor Brand       Apple
+                            Processor Name        M3 Pro
+                            SSD                   Yes
+                            SSD Capacity           512 GB
+                            RAM                    18 GB
+                            RAM Type             Unified Memory
+                            Graphic Processor     NA
+
+                            Operating System
+                            Operating System      macOS Sonoma
+
+
+                            Port And Slot Features
+                            Mic In                 Yes
+                            USB Port
+                            3 x Thunderbolt / USB 4 Ports 
+
+</div>
+
+<script>
+    // Get references to the button and content
+    var button = document.getElementById('showButton');
+    var content = document.getElementById('content');
+
+    // Add click event listener to the button
+    button.addEventListener('click', function() {
+        // Toggle the display of the content
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

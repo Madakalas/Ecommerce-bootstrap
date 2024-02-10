@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Style for the tooltip */
+    .tooltip {
+      position: absolute;
+      display: none;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Image container -->
+<div id="imageContainer" style="position: relative; display: inline-block;">
+  <!-- Image -->
+  <img src="./iphone 14.webp" alt="Your Image" id="image" style="width: 300px; height: 200px;">
+
+  <!-- Tooltip -->
+  <div id="tooltip" class="tooltip"></div>
+ 
+</div>
+
+<script>
+  // Get the image and tooltip elements
+  var image = document.getElementById("image");
+  var tooltip = document.getElementById("tooltip");
+
+  // Add a mouseover event listener to the image
+  image.addEventListener("mouseover", function(event) {
+    // Get the mouse position
+    var mouseX = event.clientX;
+    var mouseY = event1.clientY;
+
+    // Set the content of the tooltip
+    tooltip.innerHTML="frontcamera:12";
+    
+
+    // Position the tooltip relative to the mouse position
+    tooltip.style.left = mouseX + "px";
+    tooltip1.style.top = mouseY + "px";
+
+    // Display the tooltip
+    tooltip.style.display = "block";
+  });
+
+  // Add a mouseout event listener to hide the tooltip when the mouse leaves the image
+  image.addEventListener("mouseout", function() {
+    // Hide the tooltip
+    tooltip.style.display = "none";
+  });
+</script>
+
+</body>
+</html>
